@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Crystal Collector | Tyler Kadow</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="theHeader">
+    <h1>Crystal Collector</h1>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="instructions">
+        <div class="text">
+          <p>
+            You are given a random number to start the game.
+          </p>
+          <p>
+            There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
+          </p>
+          <p>
+            If your total score matches the random number, you win! But if you go over the random number, you lose!
+          </p>
+          <p>
+            In every new game, the value of each crystal changes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <div class="col-md-6">
+    <div class="number-to-guess">
+      <p>Number to reach: 
+        <span id="targetNumber"></span>
+      </p>
+    </div>
+
+    <div class="totalScore">
+      <p>Current score:
+        <span id="score"></span>
+      </p>
+    </div>
+
+      <div class="gems">
+        <p>
+          Gems
+        </p>
+        <img src="assets/images/1.png" id="first">
+        <img src="assets/images/2.png" id="second">
+        <img src="assets/images/3.png" id="third">
+        <img src="assets/images/4.png" id="fourth">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-6">
+      <div class="win-loss-counter">
+        <p id="result"></p>
+        <p>Wins:
+          <span id="wins"></span>
+        </p>
+        <p>Losses:
+          <span id="losses"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
