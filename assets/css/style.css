@@ -2,11 +2,16 @@ body {
 	background-color: #87CEFA;
 }
 
-.theHeader {
-	color: white;
-	background-color: orange;
-	font-size: 24px;
+.panel {
+	font-size: 20px;
 	text-align: center;
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: orange;
+    color: white;
+
 }
 
 h1 {
@@ -18,42 +23,17 @@ h1 {
 
 .instructions {
 	background-color: #F0E68C;
-}
-
-.number-to-guess {
-	background-color: white;
-	width: 400px;
-	height: 60px;
-}
-
-.win-loss-counter {
-	background-color: green;
-	width: 150px;
-	height: 150px;
+	text-align: left;
 }
 
 .gems {
 	background-color: #fffff0;
 	border: 4px solid black;
-		text-align: center;
-}
-
-.gems p {
-
-	font-weight: bold;
-}
-.instructions,
-.number-to-guess,
-.win-loss-counter,
-.gems,
-.totalScore
-{
+	text-align: center;
 	padding: 1%;
 	margin: 1%;
 }
 
-.instructions p,
-.win-loss-counter p
-{
-	padding: 10px;
+.gems p {
+	font-weight: bold;
 }

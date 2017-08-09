@@ -2,77 +2,96 @@
 <html>
 <head>
   <title>The Crystal Collector | Tyler Kadow</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-  <div class="theHeader">
-    <h1>Crystal Collector</h1>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">Crystal Collector</div>
+    </div>
   </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
-      <div class="instructions">
-        <div class="text">
-          <p>
-            You are given a random number to start the game.
-          </p>
-          <p>
-            There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.
-          </p>
-          <p>
-            If your total score matches the random number, you win! But if you go over the random number, you lose!
-          </p>
-          <p>
-            In every new game, the value of each crystal changes.
-          </p>
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">Instructions</div>
+        <div class="panel-body instructions">
+          You are given a random number to reach when you start the game. By clicking on one of the crystals below, you will add a specific amount of points to your total score. If your total score matches the random number, you win! But if you go over the random number, you lose! In every new game, the value of each crystal and the number to reach changes.
         </div>
       </div>
     </div>
 
-  <div class="col-md-6">
-    <div class="number-to-guess">
-      <p>Number to reach: 
-        <span id="targetNumber"></span>
-      </p>
+    <div class="col-md-2"></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Number to reach
+        </div>
+        <div class="panel-body">
+            <span id="targetNumber"></span>
+        </div>
+      </div>
     </div>
 
-    <div class="totalScore">
-      <p>Current score:
-        <span id="score"></span>
-      </p>
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Current Score
+        </div>
+        <div class="panel-body">
+            <span id="score"></span>
+        </div>
+      </div>
     </div>
 
-      <div class="gems">
-        <p>
-          Gems
-        </p>
-        <img src="assets/images/1.png" id="first">
-        <img src="assets/images/2.png" id="second">
-        <img src="assets/images/3.png" id="third">
-        <img src="assets/images/4.png" id="fourth">
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Wins
+        </div>
+        <div class="panel-body">
+            <span id="wins"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          Losses
+        </div>
+        <div class="panel-body">
+            <span id="losses"></span>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="row">
+    <div class="col-md-3"></div>
     <div class="col-md-6">
-    </div>
-    <div class="col-md-6">
-      <div class="win-loss-counter">
-        <p id="result"></p>
-        <p>Wins:
-          <span id="wins"></span>
+      <div class="gems">
+        <p>
+          Gems
         </p>
-        <p>Losses:
-          <span id="losses"></span>
-        </p>
+        <img src="assets/images/1.png" id="first" alt="Blue Crystal">
+        <img src="assets/images/2.png" id="second" alt="Green Crystal">
+        <img src="assets/images/3.png" id="third" alt="Red Crystal">
+        <img src="assets/images/4.png" id="fourth" alt="Yellow Crystal">
       </div>
     </div>
+    <div class="col-md-3"></div>
   </div>
+
 </div>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
